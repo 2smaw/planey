@@ -11,7 +11,10 @@
     <main>
         <div class="parent">
             <img src="House.jpg" width="700px" height = "500px"  />
-            <div class="inner"><img src="highlight.png" height = "100" width = "100"/></div>
+            <div class="inner" onclick="myFunction()">
+                <img src="highlight.png" height = "100" width = "100"/>
+                <span class="popuptext" id="myPopup">Alek's text</span>
+            </div>
         </div>
         <!-- <div class="pngcontainer1">
             <img src="Kitchen.jpg" />
@@ -19,6 +22,13 @@
         </div> -->
         
     </main>
-    
+
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
