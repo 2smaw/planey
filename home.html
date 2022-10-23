@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+         <script src="script.js"></script>
+         <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    </head>
+    <body style=" font-family: Allura; font-size: 22px;">
+        <header>
+           
+            <div class="topnav">
+
+                <!-- Centered link -->
+                <div class="topnav-centered">
+                    <img  height = "50px" width = "50px" src = "images/logos/Planey(2).png" alt="">
+                </div>
+              
+                <!-- Left-aligned links (default) -->
+                <a href="home.html" class=" nav__link">Home</a>
+                <a href="habbits.html" class=" nav__link">Habits</a>
+                <a href="myUsage.html" class=" nav__link">Usage</a>
+                
+              
+                <!-- Right-aligned links -->
+                <div class="topnav-right">
+                    <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" class=" nav__link">Kids</a>
+                    <a style="color: gold;" class=" nav__link">100</a>
+                    <img  src="images/logos/coin.png" height = "50px" width = "50px"/> 
+                </div>
+              
+              </div>
+              
+           
+
+        </header>
+        <main>
+            <div class="home_container">
+                <div class="center">
+                    <img style="margin-top: 250px;" src="images/logos/house.png" width=1100px height = 810px  />
+
+                    <a class="trigger_popup_fricc"><div style="position:relative;z-index:0; bottom:690px;left:600px;" class="inner" ><img src="images/logos/highlight.png" height = "50px" width = "50px"/></div></a>
+                    <div  class="hover_bkgr_fricc">
+                        <span class="helper"></span>
+                        <div style="background-color: #edeae3;">
+                            <div  class="popupCloseButton">&times;</div>
+                            <img  src="images/logos/light_tip.png" width="400px" height = "400px"/>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js">
+                    </script>
+                    <script type = "text/javascript">
+                        $(window).load(function () {
+                            $(".trigger_popup_fricc").click(function(){
+                            $('.hover_bkgr_fricc').show();
+                            });
+                            $('.hover_bkgr_fricc').click(function(){
+                                $('.hover_bkgr_fricc').hide();
+                            });
+                            $('.popupCloseButton').click(function(){
+                                $('.hover_bkgr_fricc').hide();
+                            });
+                        });
+                    </script>
+                    
+
+                   
+                    
+
+                     
+                <!--    <a class="trigger_popup_fricc"> <div style="position:relative;z-index:0; bottom: 650px;left: 250px;" class="inner" ><img src="images/logos/highlight.png" height = "50" width = "50"/></div></a>
+                    <div  class="hover_bkgr_fricc">
+                        <span class="helper"></span>
+                        <div style="background-color: #edeae3;">
+                            <div  class="popupCloseButton">&times;</div>
+                            <img  src="images/logos/insulae_tip.png" width="400px" height = "400px"/>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js">
+                    </script>
+                    <script type = "text/javascript">
+                        $(window).load(function () {
+                            $(".trigger_popup_fricc").click(function(){
+                            $('.hover_bkgr_fricc').show();
+                            });
+                            $('.hover_bkgr_fricc').click(function(){
+                                $('.hover_bkgr_fricc').hide();
+                            });
+                            $('.popupCloseButton').click(function(){
+                                $('.hover_bkgr_fricc').hide();
+                            });
+                        });
+                    </script> -->
+                   
+                   
+                  
+
+                    
+                    
+                   
+                    
+                    
+                     
+                    
+                    
+
+                </div>
+            </div>
+        
+        
+        </main>
+
+    </body>
+
+</html>
